@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Stick+No+Bills:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./images/pattern.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.heading {
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-top: 60px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.clock-container {
+  width: 38%;
+  height: 200px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  cursor: default;
+  box-shadow: 9px 11px 22px -3px rgb(67, 66, 66);
+}
+
+.clock-desc {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 46px;
+  letter-spacing: 9px;
+  font-family: "Stick No Bills", sans-serif;
+  width: 100%;
+  justify-content: center;
+}
+
+#para {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+span {
+  font-weight: 900;
+  font-size: 18px;
+}
+
+/* -------- Responsiveness---------- */
+@media screen and (max-width: 400px) {
+  html,body {
+    height: 100dvh;
+    width: 100%;
+  }
+  .main{
+    height: 100dvh;
+    width: 100%;
+    padding: 0 5px;
+  }
+  .heading {
+    padding-top: 6.5rem;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+  }
+  .clock-container {
+    width: 90%;
+    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .clock-desc {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    letter-spacing: 9px;
+    padding: 0 20px;
+  }
+  #para {
+    font-size: 14px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  span {
+    font-size: 16px;
+  }
+}
